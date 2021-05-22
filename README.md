@@ -12,25 +12,19 @@ I want to be able to view and manage the departments, roles, and employees in my
 So that I can organize and plan my business  
 
 ## Requirements:
-- [ ] A database schema containing 3 tables:
-  - [ ] department:
-    - [ ] id - INT PRIMARY KEY
-    - [ ] name - VARCHAR(30) to hold department name
-  - [ ] role:
-    - [ ] id - INT PRIMARY KEY
-    - [ ] title -  VARCHAR(30) to hold role title
-    - [ ] salary -  DECIMAL to hold role salary
-    - [ ] department_id -  INT to hold reference to department role belongs to
-  - [ ] employee:
-    - [ ] id - INT PRIMARY KEY
-    - [ ] first_name - VARCHAR(30) to hold employee first name
-    - [ ] last_name - VARCHAR(30) to hold employee last name
-    - [ ] role_id - INT to hold reference to role employee has
-    - [ ] manager_id - INT to hold reference to another employee that manages the employee being Created. This field may be null if the employee has no manager
-- [ ] A command-line application that at a minimum allows the user to:
-  - [ ] Add departments, roles, employees
-  - [ ] View departments, roles, employees
-  - [ ] Update employee roles
+- [x] A database schema containing 3 tables:
+  - [x] department containing id and name columns
+  - [x] role containing id, title, salary and department_id columns
+  - [x] employee containing id, first_name, last_name, role_id and manager_id
+
+- [x] A command-line application that allows the user to:
+  - [x] Add departments, roles, employees
+  - [x] View departments, roles, employees
+  - [x] Update employee roles
+
+- [x] Use the MySQL NPM package to connect to your MySQL database and perform queries
+- [x] Use InquirerJs NPM package to interact with the user via the command-line
+- [x] Use console.table to print MySQL rows to the console
 
 Bonus:
 - [ ] Update employee managers
