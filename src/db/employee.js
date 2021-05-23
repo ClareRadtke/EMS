@@ -25,7 +25,7 @@ function addEmployeeData(employee) {
   return new Promise((resolve, reject) => {
     connection.query(
       `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES 
-      ("${employee.firstName}", "${employee.lastName}", ${employee.roleId}, ${employee.managerId})`,
+      (?, ?, ?, ?)`, [employee.firstName, employee.lastName, employee.roleId, employee.managerId],
       (err) => {
         if (err) reject(err);
         resolve();
@@ -38,7 +38,7 @@ function updateEmployeeRole(newData) {
   console.log("updating employee information...");
   return new Promise((resolve, reject) => {
     connection.query(
-      `UPDATE employee SET role_id = ${newData.updatedRoleId} WHERE id = ${newData.employeeId}`,
+      `UPDATE employee SET role_id = ? WHERE id = ?`, [newData.updatedRoleId, newData.employeeId],
       (err) => {
         if (err) reject(err);
         resolve();

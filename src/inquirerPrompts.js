@@ -77,7 +77,7 @@ function mainMenuPrompt() {
 // Action Prompts
 function addEmployeePrompt() {
   inquirer.prompt(addEmployeeQuestions).then((answers) => {
-    const manager = answers.managerId != "" ? answers.managerId : "NULL";
+    const manager = answers.managerId != "" ? answers.managerId : null;
     const newEmployee = new Employee(
       answers.firstName,
       answers.lastName,

@@ -13,7 +13,7 @@ function addDeptData(dept) {
   console.log("Adding new department data ....");
   return new Promise((resolve, reject) => {
     connection.query(
-      `INSERT INTO department (name) VALUES ("${dept.deptName}") `,
+      `INSERT INTO department (name) VALUES (?) `, [dept.deptName],
       (err) => {
         if (err) reject(err);
         resolve();

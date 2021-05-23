@@ -17,7 +17,8 @@ function addRoleData(role) {
   console.log("Adding new role data ....");
   return new Promise((resolve, reject) => {
     connection.query(
-      `INSERT INTO role (title, salary, department_id) VALUES ("${role.roleTitle}", ${role.salary}, ${role.deptId})`,
+      `INSERT INTO role (title, salary, department_id)
+      VALUES (?, ?, ?)`, [role.roleTitle, role.salary, role.deptId],
       (err) => {
         if (err) reject(err);
         resolve();
