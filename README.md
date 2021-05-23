@@ -1,10 +1,15 @@
 # Employee Management System
 
 A CLI interface to manage employee details using node, inquirer, and MySQL.  
-Get your employee information under control using this [Employee Management System]().
+Get your employee information under control using this Employee Management System.
+
+## Usage
+In your terminal type node src/index.js
+
+## Prerequisit
+Docker
 
 ![Video walkthrough of how to use Notizen](./assets/images/walkthough.gif)
-
 
 ## User Story
 As a business owner  

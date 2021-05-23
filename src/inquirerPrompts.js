@@ -136,5 +136,4 @@ function viewDepts() {
 
 module.exports = {
   mainMenuPrompt,
-  responses,
 };
