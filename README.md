@@ -4,12 +4,15 @@ A CLI interface to manage employee details using node, inquirer, and MySQL.
 Get your employee information under control using this Employee Management System.
 
 ## Usage
-In your terminal type node src/index.js
+In your terminal type:
+- `./run.sh` to run the database
+- `node src/index.js` to run the EMS
 
-## Prerequisit
-Docker
 
-![Video walkthrough of how to use Notizen](./assets/images/walkthough.gif)
+## Prerequisite
+Docker 
+
+![Video walkthrough of how to use Notizen](./assets/images/walkthrough.gif)
 
 ## User Story
 As a business owner  

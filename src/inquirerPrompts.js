@@ -4,7 +4,7 @@ const { Employee, Role, Department } = require("./models/classes");
 const {
   getEmployees,
   addEmployeeData,
-  updateEmployeeData,
+  updateEmployeeRole,
 } = require("./db/employee");
 const { getRoles, addRoleData } = require("./db/role");
 const { getDepartments, addDeptData } = require("./db/department");
